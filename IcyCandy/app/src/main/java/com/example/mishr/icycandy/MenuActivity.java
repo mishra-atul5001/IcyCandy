@@ -47,14 +47,12 @@ public class MenuActivity extends AppCompatActivity {
         for (int i = 0; i < images.length; i++) {
             dataModelList.add(new DataModel(iceCreamList[i], images[i], iceCreamDescList[i]));
         }
-        Log.d("Menu Activity", dataModelList.toString());
+     //   Log.d("Menu Activity", dataModelList.toString());
         mAdapter.clear();
         mAdapter.addAll(dataModelList);
         mAdapter.notifyDataSetChanged();
     }
 }
-
-
 
 
 

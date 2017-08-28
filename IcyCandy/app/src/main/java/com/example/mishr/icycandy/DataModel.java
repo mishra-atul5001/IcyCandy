@@ -5,16 +5,16 @@ package com.example.mishr.icycandy;
  * Created by mishr on 27/08/2017.
  */
 
-class DataModel  {
+class DataModel {
 
     private String head;
     private String desc;
     private int image;
 
-    DataModel(String head, int image, String desc){
-        this.head=head;
-        this.desc=desc;
-        this.image=image;
+    DataModel(String head, int image, String desc) {
+        this.head = head;
+        this.desc = desc;
+        this.image = image;
     }
 
     String getHead() {
@@ -33,12 +33,11 @@ class DataModel  {
         this.desc = desc;
     }
 
-    int getImage(){
+    int getImage() {
         return image;
     }
-    public void setImage(int image){
+
+    public void setImage(int image) {
         this.image = image;
     }
 }
-
-
