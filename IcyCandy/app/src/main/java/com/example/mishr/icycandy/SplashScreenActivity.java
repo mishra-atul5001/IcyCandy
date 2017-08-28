@@ -10,11 +10,11 @@ import android.widget.Toast;
  * Created by mishr on 26/08/2017.
  */
 
-public class splashscreen extends AppCompatActivity {
+public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Toast.makeText(splashscreen.this,getString(R.string.icing),Toast.LENGTH_LONG).show();
+        Toast.makeText(SplashScreenActivity.this,getString(R.string.icing),Toast.LENGTH_LONG).show();
        for(int i = 0 ; i<2000;i++){
            //Delaying the Splash Screen
        }
@@ -30,7 +30,7 @@ public class splashscreen extends AppCompatActivity {
                 }
                 finally
                 {
-                    Intent i=new Intent(splashscreen.this,MainActivity.class);
+                    Intent i=new Intent(SplashScreenActivity.this,MainActivity.class);
                     finish();
                     startActivity(i);
                 }
@@ -38,7 +38,7 @@ public class splashscreen extends AppCompatActivity {
             }
         };
         timer.start();
-       // Intent intent = new Intent(splashscreen.this,MainActivity.class);
+       // Intent intent = new Intent(SplashScreenActivity.this,MainActivity.class);
       //  startActivity(intent);
     }
 }
