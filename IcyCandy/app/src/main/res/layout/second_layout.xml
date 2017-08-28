@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="This Application lets you Build your Custom Ice Cream.Imagine Vanila naked and you got to cover it up....What possibly you could make out of it..!?"
+     android:textSize="20dp"
+     android:textAlignment="center"
+     android:background="@color/LightSkyBlue"
+     android:textStyle="bold|italic"
+     android:paddingEnd="12dp"
+     android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Some Examples could be..:"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="13dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="125dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="49dp"
+            android:paddingLeft="8dp"
+            app:srcCompat="@drawable/icy2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="125dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="24dp"
+            app:srcCompat="@drawable/icy1" />
+
+    </RelativeLayout>
+   
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        android:fontFamily="serif"
+        android:textStyle="italic"
+        android:textColor="@color/Black"
+        android:text="The first image is a Custom build Cone Ice-Cream."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        android:fontFamily="serif"
+        android:textStyle="italic"
+        android:textColor="@color/Black"
+        android:text="The second image is a Stand Alone Ice-Cream Stick to be Modified."/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Get started"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_ticket"
+        android:padding="18dp"
+        android:id="@+id/but2"
+        android:onClick="back"/>
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Coral</item>
+        <item name="colorPrimaryDark">@color/DimGray</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CustomText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/Chocolate</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="CustomText1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/DarkGoldenrod</item>
+        <item name="android:gravity">center</item>
+    </style>
+   <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+       <item name="android:windowBackground">@drawable/splash_layout</item>
+   </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

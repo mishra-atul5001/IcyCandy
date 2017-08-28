@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/screenshot"
+        android:title="@string/screenshot"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/add"
+        android:title="@string/one"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/sub"
+        android:title="@string/two"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mul"
+        android:title="@string/three"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/div"
+        android:title="@string/four"
+        app:showAsAction="ifRoom"/>
+</menu>

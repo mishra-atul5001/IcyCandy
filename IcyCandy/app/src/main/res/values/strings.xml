@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Icy Candy</string>
+    <string name="action_favorite">favourite</string>
+
+    <string name="action_settings">settings</string>
+    <string name="title_activity_child">child activity</string>
+    <string name="selected_ice_cream">Selected Ice Cream</string>
+    <string name="one">one</string>
+    <string name="two">two</string>
+    <string name="three">three</string>
+    <string name="four">four</string>
+    <string name="screenshot">Take Screenshot</string>
+    <string name="icing">Let the Icing begin..!!</string>
+</resources>
