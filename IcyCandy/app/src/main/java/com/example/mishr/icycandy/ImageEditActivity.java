@@ -23,7 +23,7 @@ import android.widget.TextView;
  * Created by mishr on 25/08/2017.
  */
 
-public class imagedit extends AppCompatActivity {
+public class ImageEditActivity extends AppCompatActivity {
     ImageView flag;
     TextView tx_bundle;
     public static final int CAMERA_REQUEST = 123;

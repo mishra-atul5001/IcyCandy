@@ -13,8 +13,7 @@
         android:launchMode="singleTask"
         android:theme="@style/AppTheme">
         <activity android:name=".SplashScreenActivity"
-            android:theme="@style/SplashTheme"
-            >
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +23,7 @@
         </activity>
         <activity android:name=".SelectionActivity"/>
         <activity android:name=".MenuActivity"/>
-        <activity android:name=".imagedit"/>
+        <activity android:name=".ImageEditActivity"/>
         <activity android:name=".MainActivity"/>
 
        
