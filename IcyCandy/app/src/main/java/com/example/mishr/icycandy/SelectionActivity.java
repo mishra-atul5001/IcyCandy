@@ -6,8 +6,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.transition.Fade;
 import android.transition.Slide;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -17,7 +15,7 @@ import android.widget.Toast;
  * Created by mishr on 24/08/2017.
  */
 
-public class Selection_activity  extends AppCompatActivity{
+public class SelectionActivity extends AppCompatActivity{
     Button bt2;
     ImageView iv1;
     ImageView iv2;
@@ -47,9 +45,9 @@ public class Selection_activity  extends AppCompatActivity{
     }
 
     public void back(View view) {
-        Intent in = new Intent(Selection_activity.this,Menu_activity.class);
+        Intent in = new Intent(SelectionActivity.this,MenuActivity.class);
         startActivity(in);
-        Toast.makeText(Selection_activity.this,"Hurrah..!!",Toast.LENGTH_SHORT).show();
+        Toast.makeText(SelectionActivity.this,"Hurrah..!!",Toast.LENGTH_SHORT).show();
 
     }
 

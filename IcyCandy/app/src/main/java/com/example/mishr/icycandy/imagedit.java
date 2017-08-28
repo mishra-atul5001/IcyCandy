@@ -1,6 +1,5 @@
 package com.example.mishr.icycandy;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -9,26 +8,16 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.NotificationCompat;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toolbar;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Calendar;
 
 /**
  * Created by mishr on 25/08/2017.
@@ -72,7 +61,7 @@ public class imagedit extends AppCompatActivity {
     }
 
     public void changeflavour(View view) {
-        Intent intent = new Intent(this, Menu_activity.class);
+        Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
         notification_service();
     }

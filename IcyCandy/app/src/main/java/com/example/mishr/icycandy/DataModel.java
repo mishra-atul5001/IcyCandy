@@ -1,26 +1,23 @@
 package com.example.mishr.icycandy;
 
 
-import java.util.ResourceBundle;
-
 /**
  * Created by mishr on 27/08/2017.
  */
-public class DataModel  {
 
+class DataModel  {
 
     private String head;
     private String desc;
     private int image;
-    public DataModel(String head, int image, String desc){
+
+    DataModel(String head, int image, String desc){
         this.head=head;
         this.desc=desc;
         this.image=image;
     }
 
-
-
-    public String getHead() {
+    String getHead() {
         return head;
     }
 
@@ -28,7 +25,7 @@ public class DataModel  {
         this.head = head;
     }
 
-    public String getDesc() {
+    String getDesc() {
         return desc;
     }
 
@@ -36,7 +33,7 @@ public class DataModel  {
         this.desc = desc;
     }
 
-    public int getImage(){
+    int getImage(){
         return image;
     }
     public void setImage(int image){
