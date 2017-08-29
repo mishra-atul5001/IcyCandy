@@ -37,9 +37,10 @@ public class MenuActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         mAdapter = new MyAdapter(this);
         recyclerView.setAdapter(mAdapter);
-        mAdapter.notifyDataSetChanged();
+      //  mAdapter.notifyDataSetChanged();
 
         prepareData();
+
     }
 
     //Could have made this in onCreate() method too, but this way it's more clear and concise

@@ -27,11 +27,11 @@ public class SelectionActivity extends AppCompatActivity{
             bt2 = (Button) findViewById(R.id.but2);
             iv1 = (ImageView) findViewById(R.id.imageView2);
             iv2 = (ImageView)findViewById(R.id.imageView3);
-            setupWindowAnimations();
+           // setupWindowAnimations();
 
         
     }
-    private void setupWindowAnimations() {
+  /*  private void setupWindowAnimations() {
         Fade fade = new Fade();
         fade.setDuration(1000);
         getWindow().setEnterTransition(fade);
@@ -42,7 +42,7 @@ public class SelectionActivity extends AppCompatActivity{
 
 
 
-    }
+    }   */
 
     public void back(View view) {
         Intent in = new Intent(SelectionActivity.this,MenuActivity.class);
