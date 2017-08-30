@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/layout">
+    android:id="@+id/layout"
+    >
 
 
     <ImageView
@@ -25,6 +26,21 @@
         android:textStyle="bold|italic"
         android:fontFamily="monospace"
         android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="22dp"
+        android:text="Save it..!!"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:fontFamily="monospace"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/DodgerBlue"
+        android:onClick="save"/>
 
     <Button
         android:id="@+id/button2"

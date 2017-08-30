@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mishr.icycandy">
 
+
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/iconic"
@@ -16,14 +20,17 @@
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
         </activity>
         <activity android:name=".SelectionActivity"/>
+
         <activity android:name=".MenuActivity"/>
+
         <activity android:name=".ImageEditActivity"/>
+
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
         <activity android:name=".MainActivity"/>
 
        

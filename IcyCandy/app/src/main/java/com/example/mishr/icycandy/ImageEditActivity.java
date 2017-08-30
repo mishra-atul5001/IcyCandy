@@ -2,12 +2,16 @@ package com.example.mishr.icycandy;
 
 import android.app.Activity;
 import android.app.NotificationManager;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -17,8 +21,15 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.jar.Attributes;
 
 import static java.util.jar.Attributes.*;
@@ -38,6 +49,7 @@ public class ImageEditActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fourht_layout);
         flag = (ImageView) findViewById(R.id.imageView5);
+        LinearLayout l1 = (LinearLayout)findViewById(R.id.layout);
         tx_bundle = (TextView) findViewById(R.id.textviewbundle);
           Bundle bundle = getIntent().getExtras();
         if (bundle!= null) {
@@ -111,4 +123,13 @@ public class ImageEditActivity extends AppCompatActivity {
             }*/
         }
     }
-}
+
+
+    public void save(View view) {
+        flag.setDrawingCacheEnabled(true);
+        Bitmap bm = flag.getDrawingCache();
+        MediaStore.Images.Media.insertImage(getContentResolver(),bm,"Did Well..!!","Saved..!!");
+
+        {
+        }
+    }}
