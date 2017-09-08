@@ -30,6 +30,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.jar.Attributes;
 
 import static java.util.jar.Attributes.*;
@@ -39,20 +41,21 @@ import static java.util.jar.Attributes.*;
  */
 
 public class ImageEditActivity extends AppCompatActivity {
+    //  private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 1;
     ImageView flag;
     TextView tx_bundle;
     public static final int CAMERA_REQUEST = 123;
-   // static Uri capturedImageUri = null;
+    // static Uri capturedImageUri = null;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fourht_layout);
         flag = (ImageView) findViewById(R.id.imageView5);
-        LinearLayout l1 = (LinearLayout)findViewById(R.id.layout);
+        LinearLayout l1 = (LinearLayout) findViewById(R.id.layout);
         tx_bundle = (TextView) findViewById(R.id.textviewbundle);
-          Bundle bundle = getIntent().getExtras();
-        if (bundle!= null) {
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
             tx_bundle.setText(bundle.getString("Ice Cream"));
             if (tx_bundle.getText().toString().equals("Chocolate")) {
                 flag.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic4));
@@ -82,9 +85,8 @@ public class ImageEditActivity extends AppCompatActivity {
     }
 
     public void camerainvoked(View view) {
-          Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-          startActivityForResult(intent,CAMERA_REQUEST);
-
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent, CAMERA_REQUEST);
 
     }
 
@@ -105,9 +107,10 @@ public class ImageEditActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-         if(requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK){
-             Bitmap photo = (Bitmap) data.getExtras().get("data");
-           flag.setImageBitmap(photo);
+        if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK) {
+            Bitmap photo = (Bitmap) data.getExtras().get("data");
+            flag.setImageBitmap(photo);
+
       /*  if (requestCode == CAMERA_REQUEST) {
             //Bitmap photo = (Bitmap) data.getExtras().get("data");
             //imageView.setImageBitmap(photo);
@@ -123,13 +126,7 @@ public class ImageEditActivity extends AppCompatActivity {
             }*/
         }
     }
+}
 
 
-    public void save(View view) {
-        flag.setDrawingCacheEnabled(true);
-        Bitmap bm = flag.getDrawingCache();
-        MediaStore.Images.Media.insertImage(getContentResolver(),bm,"Did Well..!!","Saved..!!");
 
-        {
-        }
-    }}

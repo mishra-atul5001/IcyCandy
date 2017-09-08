@@ -7,18 +7,24 @@
         app:showAsAction="always"/>
     <item
         android:id="@+id/add"
-        android:title="@string/one"
+        android:title="Pin It..!!"
+        android:icon="@drawable/ic_fiber_pin_black_24dp"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/sub"
-        android:title="@string/two"
+        android:title="Love..!!"
+
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/mul"
-        android:title="@string/three"
+        android:title="Settings..!!"
+         android:icon="@drawable/ic_settings_applications_black_24dp"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/div"
-        android:title="@string/four"
+        android:title="Rate Us"
+        android:icon="@drawable/ic_rate_review_black_24dp"
         app:showAsAction="ifRoom"/>
 </menu>
