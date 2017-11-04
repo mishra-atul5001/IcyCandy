@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/trending"
+            android:icon="@drawable/ic_trending_up_black_24dp"
+            android:title="Trending" />
+        <item
+            android:id="@+id/myfreinds"
+            android:icon="@drawable/ic_directions_bike_black_24dp"
+            android:title="MY Freinds" />
+        <item
+            android:id="@+id/uploads"
+            android:icon="@drawable/ic_photo_album_black_24dp"
+            android:title="My Uploads" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

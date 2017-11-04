@@ -19,6 +19,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.NotificationCompat;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -78,6 +79,39 @@ public class ImageEditActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.pinit:
+                Toast.makeText(this, "Saving..!!", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.mysocialworld:
+                Toast.makeText(this, "Wlecome To Our Icy World..!!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this,SocialWorldActivity.class);
+                startActivity(intent);
+
+                      break;
+            case R.id.loveit:
+                Toast.makeText(this, "Thanks for your Love..!!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.setit:
+                Toast.makeText(this, "Loading..!!", Toast.LENGTH_SHORT).show();
+                Intent in = new Intent(this,MenuHandleActivity.class);
+                startActivity(in);
+                break;
+            case R.id.rateit:
+                Toast.makeText(this, "Visit Play Store", Toast.LENGTH_SHORT).show();
+                break;
+
+
+
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     public void changeflavour(View view) {
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
@@ -127,6 +161,3 @@ public class ImageEditActivity extends AppCompatActivity {
         }
     }
 }
-
-
-

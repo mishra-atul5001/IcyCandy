@@ -57,8 +57,8 @@ public class SelectionActivity extends AppCompatActivity{
 
         Intent in = new Intent(SelectionActivity.this,MenuActivity.class);
         startActivity(in);
-     /*   Toast.makeText(SelectionActivity.this,"Hurrah..!!",Toast.LENGTH_SHORT).show();
-        TransitionManager.beginDelayedTransition(transitionsContainer);
+        Toast.makeText(SelectionActivity.this,"Hurrah..!! Let's Roll",Toast.LENGTH_SHORT).show();
+       /* TransitionManager.beginDelayedTransition(transitionsContainer);
         visible = !visible;
         tx_anima.setVisibility(visible ? View.VISIBLE : View.GONE);
 
