@@ -1,26 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:background="@color/AntiqueWhite"
     tools:context="com.example.mishr.icycandy.MenuHandleActivity">
 
-    <TextView
-        android:id="@+id/textView2"
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Link My PhoneBook..!!"
+           android:textAllCaps="false"
+           android:padding="20dp"
+           android:id="@+id/phonebook"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:layout_marginLeft="25sp"
+           android:layout_marginBottom="20sp"
+           android:textColor="@color/SaddleBrown"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Connect FaceBook..!!"
+           android:textAllCaps="false"
+           android:padding="20dp"
+           android:id="@+id/fb"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:textColor="@color/SaddleBrown"
+           android:layout_marginLeft="25sp"/>
+
+
+
+   </LinearLayout>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to The Settings Page Buddy..!! They Will be Soon Out..!!"
-        android:textSize="25sp"
-        android:gravity="center"
-        android:padding="60dp"
-        android:textAlignment="center"
-        android:textColor="@color/OrangeRed"
-        android:textStyle="bold|italic"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        android:text="Take Me Back..!!"
+        android:layout_gravity="end"
+        android:layout_marginTop="175sp"
+        android:layout_marginRight="15sp"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:id="@+id/back"
+        android:textColor="@color/Brown"/>
+
+
+
+</LinearLayout>

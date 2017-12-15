@@ -20,8 +20,8 @@
 
         app:showAsAction="ifRoom"/>
     <item
-        android:id="@+id/setit"
-        android:title="Settings..!!"
+        android:id="@+id/socialmedia"
+        android:title="Connect SM..!!"
          android:icon="@drawable/ic_settings_applications_black_24dp"
         app:showAsAction="ifRoom"/>
     <item

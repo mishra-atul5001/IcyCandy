@@ -87,7 +87,7 @@ public class ImageEditActivity extends AppCompatActivity {
                 break;
 
             case R.id.mysocialworld:
-                Toast.makeText(this, "Wlecome To Our Icy World..!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Welcome To Our Icy World..!!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this,SocialWorldActivity.class);
                 startActivity(intent);
 
@@ -95,7 +95,7 @@ public class ImageEditActivity extends AppCompatActivity {
             case R.id.loveit:
                 Toast.makeText(this, "Thanks for your Love..!!", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.setit:
+            case R.id.socialmedia:
                 Toast.makeText(this, "Loading..!!", Toast.LENGTH_SHORT).show();
                 Intent in = new Intent(this,MenuHandleActivity.class);
                 startActivity(in);
